@@ -1,4 +1,4 @@
-package demo.arango.com.example;
+package demo.arango.com.crud;
 
 import com.arangodb.ArangoDB;
 import com.arangodb.ArangoDBException;
@@ -14,7 +14,7 @@ public class ReadDocument {
 			BaseDocument myDocument = arangoDB.db(dbName).collection(collectionName).getDocument("Kafka", BaseDocument.class);
 			System.out.println("Key: " + myDocument.getKey());
 			System.out.println("Attribute 'name': " + myDocument.getProperties().get("name"));
-			System.out.println("Attribute 'id': " + myDocument.getProperties().get("id"));
+			System.out.println("Attribute 'ID': " + myDocument.getProperties().get("id"));
 			System.out.println("Attribute 'company': " + myDocument.getProperties().get("company"));
 		} catch (ArangoDBException e) {
 			System.out.println("Failed to get document. " + e.getMessage());

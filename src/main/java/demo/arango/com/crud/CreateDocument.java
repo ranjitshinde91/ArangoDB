@@ -1,4 +1,4 @@
-package demo.arango.com.example;
+package demo.arango.com.crud;
 
 import com.arangodb.ArangoDB;
 import com.arangodb.entity.BaseDocument;
@@ -10,8 +10,8 @@ public class CreateDocument {
 		String collectionName = "TestCollection";
 		
 	    BaseDocument myObject = new BaseDocument();
-		myObject.setKey("Kafka");
-		myObject.addAttribute("name", "Kafka");
+		myObject.setKey("Ranjit");
+		myObject.addAttribute("name", "Ranjit");
 		myObject.addAttribute("id", 639);
 		myObject.addAttribute("company", "GSLab");
 		

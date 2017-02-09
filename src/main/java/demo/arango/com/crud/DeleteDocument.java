@@ -1,4 +1,4 @@
-package demo.arango.com.example;
+package demo.arango.com.crud;
 
 import com.arangodb.ArangoDB;
 import com.arangodb.ArangoDBException;
